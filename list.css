@@ -1,0 +1,138 @@
+body {
+  background-image: url('linedpaper/linedpaper.png');
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: courier, monospace;
+}
+
+form {
+  color: #3498db;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="text"] {
+  background-color: #f8f8f8;
+  padding: 8px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+#addNeed, #addHave {
+  background-color: #f8f8f8;
+  color: #3498db;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#addNeed:hover, #addHave:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+h1 {
+  color: #4183D7;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+
+h2 {
+  color: #4183D7;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  margin: 1.5rem 0 1rem;
+  word-wrap: break-word;
+}
+
+.list {
+  color: #555;
+  font-size: 1.1rem;
+  padding: 0;
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.list li {
+  list-style: none;
+  background-color: #f8f8f8;
+  border-bottom: 1px dotted #ccc;
+  padding: 12px;
+  text-transform: capitalize;
+  color: #3498db;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+li input[type="checkbox"] {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+li a {
+  margin-left: auto;
+  text-decoration: none;
+  color: red;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  #addNeed, #addHave {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .list li {
+    padding: 15px 10px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min--moz-device-pixel-ratio: 2),
+       (min-resolution: 2dppx),
+       (min-resolution: 192dpi) {
+  body {
+    background-image: url('linedpaper/linedpaper_@2x.png');
+  }
+}
